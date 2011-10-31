@@ -2,7 +2,7 @@ module Puppet::Parser::Functions
 
     newfunction( :with_trailing_slash, :type => :rvalue ) do |args|
 
-        # Rspecial situation, see http://projects.puppetlabs.com/issues/4915
+        # special situation, see http://projects.puppetlabs.com/issues/4915
         #  When this function is called from a manifest, args will be an array.
         #  When this function is called from a template, args will be a single string.
         #  Thus, let us make sure args is always an array.
