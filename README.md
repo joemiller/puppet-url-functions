@@ -5,7 +5,7 @@ A collection of custom functions for manipulating URLs in puppet manifests
 and templates.
 
 We developed this code to handle situations where multiple applications in
-our environment would share configuration variables, but would sometimes
+our environment would share URLs as configuration variables, but would sometimes
 expect the URLs in different formats.
 
 For example, while one app may expect `http://api/service/` another may
