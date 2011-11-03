@@ -88,6 +88,16 @@ Contributing
 * make your changes, test, commit, push to github
 * send a pull request
 
+Testing
+-------
+
+Tests are now implemented with the rspec-puppet gem.  To run them, execute
+`rake`.
+
+You can find the older tests in the old-tests/ subdirectory.  These tests
+are also decent examples of how to use the functions in both
+manifests and templates so I've left them in for reference but I don't
+expect to update them going forward.
 
 License
 -------
