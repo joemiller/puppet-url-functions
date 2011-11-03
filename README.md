@@ -35,6 +35,27 @@ Takes a string representing a URL and returns a string without a trailing slash,
     without_trailing_slash( "http://web.dom.tld/path")  # => "http://web.dom.tld/path"
     without_trailing_slash( "http://web.dom.tld/path/") # => "http://web.dom.tld/path"
 
+### make_http
+
+Takes a string representing a URL and returns a string with 'http://' prepended.  It
+tries to be smart and handle various formats and many protocols, eg:
+
+    make_http( "http://web.dom.tld" )   # => "http://web.dom.tld"
+    make_http( "https://web.dom.tld" )  # => "http://web.dom.tld"
+    make_http( "smtp://web.dom.tld" )   # => "http://web.dom.tld"
+    make_http( "web.dom.tld" )          # => "http://web.dom.tld"
+
+### make_https
+
+Takes a string representing a URL and returns a string with 'https://' prepended.  It
+tries to be smart and handle various formats and many protocols, eg:
+
+    make_http( "http://web.dom.tld" )   # => "https://web.dom.tld"
+    make_http( "https://web.dom.tld" )  # => "https://web.dom.tld"
+    make_http( "smtp://web.dom.tld" )   # => "https://web.dom.tld"
+    make_http( "web.dom.tld" )          # => "https://web.dom.tld"
+
+    
 Install
 -------
 
