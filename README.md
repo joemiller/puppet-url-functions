@@ -90,8 +90,6 @@ Future
 
 Add the following functions:
 
-* make_http
-* make_https
 * get_path
 * get_protocol
 * anything else that makes sense for manipulating url's
